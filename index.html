@@ -24,10 +24,12 @@
     </div>
     
 <header>
-       <nav class="container">
-            <a href="#" class="logo"><img src="logo" alt=""></a>
+       <nav class="container ">
+            <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
        
-            <div class="links">
+            <div class="links" id="links">
+                <span class="close_menu" onclick="Open_close_menu()"><i class="fa-solid fa-xmark"></i></span>
+                <a href="" class="logo"><img src="img/logo.png" alt=""></a>
                 <a class="active" href="">Home</a>
                 <a href="">About</a>
                 <a href="">Services</a>
@@ -42,6 +44,7 @@
                 <a href="mailto:mm4876475@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
                 <a href="https://www.instagram.com/mm4876475/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 <a href="tel:01064308005"><i class="fa-solid fa-phone"></i></a>
+                 <span class="icon_menu" onclick="Open_close_menu()"><i class="fa-solid fa-bars"></i></span>
             </div>
 
         </nav>  
@@ -50,8 +53,8 @@
 
 
 <div class="hero">
-    <div class="container m-4">
-        <div class="div_text">
+    <div class="container ">
+        <div class="div_text ">
             <h4>hello, I'M</h4>
             <h1><span>Mohamed Mostafa</span></h1>
             <h2>Full Stack Developer</h2>
@@ -137,12 +140,12 @@
                     <a href="#" class="btn">Read more</a>
                 </div>
 
-                <!-- <div class="box x">
+                <div class="box x mt-4">
                     <i class="fa-solid fa-bug"></i>
                     <h3>Bug Fixing & Optimization</h3>
                     <p>Debugging and optimizing website performance for smoother and faster user experience.</p>
                     <a href="#" class="btn">Read more</a>
-                </div> -->
+                </div>
         </div>
     </div>
 </section>
@@ -253,16 +256,16 @@
         </div>
 
 
-              <form action="">
+              <form action="https://getform.io/f/awnypxdb" method="post">
                    <div class="inpts_form">
-                      <input type="text" placeholder="username">
-                      <input type="text" placeholder="Email">
-                      <input type="text" placeholder="Mobile Number">
-                      <input type="text" placeholder="subject">
+                      <input type="text" placeholder="username" name="name" required >
+                      <input type="text" placeholder="Email" name="email" required >
+                      <input type="number" placeholder="Mobile Number" name="phone" required >
+                      <input type="text" placeholder="subject" name="subject">
                       
-                      <textarea name="" id="" row="10" placeholder="Your Massage Here"></textarea>
+                      <textarea name="massage" id="" row="10" required  placeholder="Your Massage Here"></textarea>
                    </div>
-                   <button class="btn">Send Massage</button>
+                   <button type="submit" class="btn">Send Massage</button>
               </form>
      </div>
 </section>
